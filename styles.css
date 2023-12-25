@@ -1,0 +1,31 @@
+/* CSS vars */
+:root {
+    --pri-blue: hsl(223, 87%, 63%);
+    --sec-pale-blu: hsl(223, 100%, 88%);
+    --sec-lt-red: hsl(354, 100%, 66%);
+    --neu-gray: hsl(0, 0%, 59%);
+    --neu-v-dk-blu: hsl(209, 33%, 12%);
+}
+
+/* Global component styles */
+body, h1, h2, h3, h4, h5, h6, p,
+dl dd, blockquote, figure {
+    margin: 0;
+}
+
+body {
+    font-family: 'Libre Franklin';
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+
+}
+
+
+/* Mobile styles */
+.illustration {
+    width: 100%;
+}
