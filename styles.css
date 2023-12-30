@@ -75,6 +75,10 @@ input {
     border-radius: 10rem;
 }
 
+input:hover {
+    border: 1px solid var(--neu-gray);
+}
+
 input::placeholder {
     color: var(--sec-pale-blu);
     font-size: .78rem;
@@ -94,6 +98,10 @@ input::placeholder {
     color: white;
     
     box-shadow: 0px 4px 16px hsla(223, 87%, 63%, 0.4);
+}
+
+.primary-btn:hover {
+    background-color: hsl(223, 74%, 55%);
 }
 
 .illustration {
@@ -127,4 +135,77 @@ footer {
     color: var(--pri-blue);
 }
 
+.icon-wrapper:hover {
+    background-color: var(--pri-blue);
+    color: white;
+}
 
+/* ///////////// */
+/* Desktop styles */
+@media screen and (min-width: 680px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-height: 100svh;
+      }
+    
+    .sign-up {
+        width: 640px;
+        margin: 5.5rem 0 5rem 0;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .logo-image {
+        width: 5.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--neu-v-dk-blu);
+    }
+
+    .sub-head {
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .input-and-btn {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%
+    }
+
+    input {
+        width: 65%;
+        padding: 1.2rem 2rem;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+    }
+
+    .primary-btn {
+        width: 35%;
+        font-size: 1rem;
+    }
+
+    .illustration {
+        max-width: 640px;
+    }
+
+    footer {
+        margin: 4rem 0 3rem 0;
+    }
+
+    h6 {
+        font-size: .7rem;
+    }
+}
